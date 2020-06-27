@@ -1,0 +1,168 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "1.8.0_111" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "Admin Login"
+			"resizable": false
+			"alwaysOnTop": true
+			"minimumSize": new java.awt.Dimension( 400, 400 )
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\DELL\\Pictures\\admin.png" )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "LOGIN"
+				"name": "b1"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 208
+				"y": 245
+				"width": 76
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "LOGIN PAGE"
+				"font": new java.awt.Font( "Tahoma", 1, 24 )
+				"name": "l1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 71
+				"y": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Admin Name"
+				"name": "l2"
+				"labelFor": &FormReference0 new FormReference( "textField1" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 131073, 1, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 70
+				"y": 95
+				"width": 105
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"name": "err"
+				"foreground": sfield java.awt.Color red
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 71
+				"y": 65
+				"height": 0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"name": "t1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 70
+				"y": 120
+				"width": 213
+				"height": 28
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Password"
+				"name": "l3"
+				"labelFor": new FormReference( "passwordField1" )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 131073, 1, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 71
+				"y": 161
+				"width": 84
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField1"
+				"name": "t2"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 71
+				"y": 186
+				"width": 213
+				"height": 28
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"foreground": sfield java.awt.Color red
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 70
+				"y": 60
+				"width": 325
+				"height": 25
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "Cancel"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 295
+				"width": 90
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\DELL\\Pictures\\cric.png" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 10
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 415, 405 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:78:p, comp label8:::p:93:p}, seq l {space :p:99:p, comp button2:::p::p}}, space ::77:x}}"
+			"$verticalGroup": "par l {seq l {space ::23:x, comp label8:::p::p, space :p:11:p, comp button2:::p::p, space :::p}}"
+		} ) {
+			name: "dialog1"
+			"title": "Warning!"
+			"resizable": false
+			"type": enum java.awt.Window$Type POPUP
+			"focusTraversalPolicyProvider": true
+			"alwaysOnTop": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "Failed to login!!!"
+				"name": "l2"
+				"labelFor": #FormReference0
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 196608, 1, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "OK"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 465, 230 )
+			"size": new java.awt.Dimension( 250, 115 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:19:p, comp label9:::p:209:p}, seq l {space :p:97:p, comp button3:::p::p}, seq l {space :p:39:p, comp label7:::p:42:p}}, space ::20:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label9:::p:22:p, space s:::p, comp button3:::p::p, space :::p, comp label7::::23:x}}"
+		} ) {
+			name: "dialog2"
+			"title": "Login Successful"
+			"resizable": false
+			"type": enum java.awt.Window$Type POPUP
+			"focusTraversalPolicyProvider": true
+			"alwaysOnTop": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "Successfully logged in..."
+				"name": "l2"
+				"labelFor": #FormReference0
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "OK"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 250, 135 )
+			"location": new java.awt.Point( 0, 415 )
+		} )
+	}
+}

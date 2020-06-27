@@ -1,0 +1,878 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "1.8.0_111" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "Stats"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\DELL\\Pictures\\images (9).jpg" )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Player Name"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 1, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 80
+				"y": 40
+				"width": 143
+				"height": 28
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 170
+				"y": 40
+				"width": 257
+				"height": 28
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Batting Stats"
+				"background": &Color0 new java.awt.Color( 255, 153, 0, 255 )
+				"border": &BevelBorder0 new javax.swing.border.BevelBorder( 1, null, null, null, null )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 77
+				"y": 127
+				"width": 229
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Bowling Stats"
+				"background": #Color0
+				"border": #BevelBorder0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 220
+				"y": 178
+				"width": 212
+				"height": 37
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "Overall Stats"
+				"background": #Color0
+				"border": #BevelBorder0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 77
+				"y": 233
+				"width": 233
+				"height": 38
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button8"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button8ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 200
+				"y": 295
+				"width": 65
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\DELL\\Pictures\\cric clip1.jpg" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 75
+				"y": -15
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label73"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 435
+				"y": 130
+				"height": 45
+				"width": 55
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 90, 0 )
+			"size": new java.awt.Dimension( 495, 375 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "frame1"
+			"title": "Batting Stats"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\DELL\\Pictures\\images (8).jpg" )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Player Name"
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 51
+				"y": 43
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"foreground": sfield java.awt.Color darkGray
+				"background": &Color1 new java.awt.Color( 204, 255, 153, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 158
+				"y": 43
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Matches"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 51
+				"y": 85
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 158
+				"y": 85
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Runs"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 51
+				"y": 127
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 158
+				"y": 127
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "Sixes"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 51
+				"y": 169
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 158
+				"y": 169
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label11"
+				"text": "Boundaries"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 51
+				"y": 211
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label12"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 158
+				"y": 211
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label13"
+				"text": "50's"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 51
+				"y": 253
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label14"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 158
+				"y": 253
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label15"
+				"text": "100's"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 51
+				"y": 295
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label16"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 158
+				"y": 295
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label17"
+				"text": "Strike Rate"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 51
+				"y": 337
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label18"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 158
+				"y": 337
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label19"
+				"text": "Average"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 51
+				"y": 379
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label20"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 158
+				"y": 379
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label21"
+				"text": "High Score"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 51
+				"y": 421
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label22"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 158
+				"y": 421
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "Back"
+				"border": &BevelBorder1 new javax.swing.border.BevelBorder( 1, null, null, null, null )
+				"background": sfield java.awt.Color pink
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 167
+				"y": 473
+				"width": 113
+				"height": 31
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label71"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\DELL\\Pictures\\cric clip2.jpg" )
+				"enabled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": -5
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 320, 390 )
+			"size": new java.awt.Dimension( 430, 575 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "frame2"
+			"title": "Bowling Stat"
+			"name": "frame2"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\DELL\\Pictures\\Bhuvneshwar_Kumar.jpg" )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label23"
+				"text": "Player Name"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 38
+				"y": 33
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label24"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 33
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label25"
+				"text": "Matches"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 38
+				"y": 75
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label26"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 75
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label27"
+				"text": "Overs"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 38
+				"y": 117
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label28"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 117
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label29"
+				"text": "Wickets"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 38
+				"y": 159
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label30"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 159
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label31"
+				"text": "Average"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 38
+				"y": 201
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label32"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 201
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label33"
+				"text": "Economy"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 38
+				"y": 243
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label34"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 243
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label35"
+				"text": "Best Bowling"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 38
+				"y": 285
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label36"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 285
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button5"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 145
+				"y": 344
+				"width": 121
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label72"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\DELL\\Pictures\\cric clip3.jpg" )
+				"enabled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"height": 420
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 400, 455 )
+			"location": new java.awt.Point( 110, 980 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "frame3"
+			"title": "Overall Stats"
+			"name": "frame3"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\DELL\\Pictures\\images (3).jpeg" )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label37"
+				"text": "Player Name"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 45
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label38"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 117
+				"y": 45
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label39"
+				"text": "Matches"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 388
+				"y": 45
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label40"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 495
+				"y": 45
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label41"
+				"text": "Runs"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 133
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label42"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 117
+				"y": 133
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label43"
+				"text": "Sixes"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 175
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label44"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 117
+				"y": 175
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label45"
+				"text": "Boundaries"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 217
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label46"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 117
+				"y": 217
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label47"
+				"text": "50's"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 259
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label48"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 117
+				"y": 259
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label49"
+				"text": "100's"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 301
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label50"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 117
+				"y": 301
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label51"
+				"text": "Strike Rate"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 343
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label52"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 117
+				"y": 343
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label53"
+				"text": "Average"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 385
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label54"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 117
+				"y": 385
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label55"
+				"text": "High Score"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 427
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label56"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 117
+				"y": 427
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "separator1"
+				"autoscrolls": true
+				"border": #BevelBorder1
+				"background": sfield java.awt.Color black
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"y": 87
+				"width": 713
+				"height": 10
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label57"
+				"text": "Overs"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 388
+				"y": 133
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label58"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 495
+				"y": 133
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label59"
+				"text": "Wickets"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 388
+				"y": 175
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label60"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 495
+				"y": 175
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label61"
+				"text": "Average"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 388
+				"y": 217
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label62"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 495
+				"y": 217
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label63"
+				"text": "Economy"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 388
+				"y": 259
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label64"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 495
+				"y": 259
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label65"
+				"text": "Best Bowling"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 388
+				"y": 301
+				"width": 97
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label66"
+				"foreground": sfield java.awt.Color darkGray
+				"background": #Color1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 495
+				"y": 301
+				"width": 208
+				"height": 24
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label67"
+				"text": "Batting"
+				"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 3, 0, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 105
+				"y": 103
+				"width": 97
+				"height": 19
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label68"
+				"text": "Bowling"
+				"font": #SwingDerivedFont1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 473
+				"y": 103
+				"width": 97
+				"height": 19
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button6"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 275
+				"y": 465
+				"width": 162
+				"height": 32
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label74"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\DELL\\Pictures\\bowler.gif" )
+				"enabled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 280
+				"y": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label75"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\DELL\\Pictures\\cricbg.jpg" )
+				"enabled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": -30
+				"y": -30
+				"width": 406
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 715, 540 )
+			"location": new java.awt.Point( 25, 1460 )
+		} )
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:81:p, comp button7:::p:103:p, space :::x}, seq {space :::p, par l {comp label70::l:::x, comp label69::l:::x}, space :p:362:p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label69:::p:23:p, space :::p, comp label70:::p:26:p, space :p:311:p, comp button7:::p:35:p, space :::x}}"
+		} ) {
+			name: "dialog1"
+			"title": "Error!!"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label69"
+				"text": "The Player you entered can not be found or"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label70"
+				"text": "you may have entered incorrect spelling!!!"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button7"
+				"text": "OK"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button7ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 560 )
+			"size": new java.awt.Dimension( 305, 170 )
+		} )
+	}
+}

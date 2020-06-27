@@ -1,0 +1,59 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "1.8.0_111" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "Admin"
+			"resizable": false
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\DELL\\Pictures\\admin.png" )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Match Info"
+				"border": &BevelBorder0 new javax.swing.border.BevelBorder( 0, sfield java.awt.Color cyan, sfield java.awt.Color red, sfield java.awt.Color pink, sfield java.awt.Color yellow )
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 1, 2, false )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 75
+				"y": 170
+				"width": 126
+				"height": 45
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": " ADD"
+				"font": new java.awt.Font( "Copperplate Gothic Bold", 0, 20 )
+				"border": new javax.swing.border.EtchedBorder( 1, sfield java.awt.Color red, sfield java.awt.Color gray )
+				"foreground": sfield java.awt.Color white
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 215
+				"y": 85
+				"width": 65
+				"height": 45
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Player Info"
+				"border": #BevelBorder0
+				"font": #SwingDerivedFont0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 126
+				"height": 45
+				"x": 295
+				"y": 170
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\DELL\\Pictures\\cric bg1.png" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 45, 0 )
+			"size": new java.awt.Dimension( 505, 320 )
+		} )
+	}
+}

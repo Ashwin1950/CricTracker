@@ -1,0 +1,58 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "1.8.0_111" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {par t {seq t {space :::p, par l {seq l {par l {comp label4:::p:222:p, comp label7:::::x}, space :p:34:p, par t {comp label5:::p:103:p, comp label8:::p:103:p}}, seq l {par l {comp label3:::p:80:p, comp label6:::p:92:p}, space :0:0:x}}}, seq l {space :p:97:p, comp label1:::p:73:p, space :::p, comp label2:::p:203:p, space :0:0:x}}, space :p:19:p}, seq t {comp label9:::::x, space :::p}, seq l {space :p:176:p, comp button1:::p::p, space ::192:x}}"
+			"$verticalGroup": "par l {seq {space :::p, par l:::p {comp label2::::23:x, comp label1::::23:x}, space s:::p, comp label3:::p:23:p, space u:::p, par l:::p {comp label5:::::x, comp label4:::p:23:p}, space :p:33:p, comp label6:::p:22:p, space u:::p, par l:::p {comp label8:::::x, comp label7:::p:23:p}, space :p:26:p, comp label9:::p:34:p, space ::26:x, comp button1:::p::p, space :::p}}"
+		} ) {
+			name: "this"
+			"title": "Match Summary"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\DELL\\Pictures\\cric cup.jpg" )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Toss"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"background": new java.awt.Color( 0, 0, 0, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "1st Innings"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "2nd Innings"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Back"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 425, 350 )
+		} )
+	}
+}
